@@ -19,7 +19,7 @@ def get_character_movies_from_api(character1)
     # binding.pry
     film_data = RestClient.get(x)
      film_hash = JSON.parse(film_data) #parse the string into a hash
-     array<<film_hash["title"]
+     array << film_hash["title"]
       end
     end
   end
